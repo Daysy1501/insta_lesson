@@ -1,0 +1,10 @@
+<h2>New_Post</h2>
+<%= form_for Post.new do |c| %>
+<label> caption:</label>
+Caption: <%= c.text_field :caption %><br/>
+
+<label>picture:</label>
+<%=c.file_field :picture %>
+<%=c.submit %>
+
+<% end %>
