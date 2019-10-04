@@ -31,8 +31,11 @@ class PostsController < ApplicationController
   def destroy
     Post.find(params["id"]).destroy
     redirect_to posts_path
-end
+  end
 
+  def perfil
+  end
+  
   private
   def post_params
     params.require(:post).permit(:caption, :picture)
